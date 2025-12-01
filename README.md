@@ -29,19 +29,23 @@ This project showcases personal details, skills, projects, achievements, and con
 
 📸 Screenshots
 
-![Home Page](images/image1.png)
+![Home Page](images/home.png)
 ![Home Page](images/image2.png)
 ![Home Page](images/image3.png)
 
+---
 
 📬 Contact
 
 If you want to connect or collaborate:
 
 Name: Vinay Kumar
+
 Email: your-vinaylkr2@gmail.com
+
 GitHub: https://github.com/vinay829222
 
 📜 License
+
 This project is open-source and free to use.
 
