@@ -1,0 +1,341 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrat Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="{% static 'style.css'%}" />
+    <style>
+      .btn-custom {
+        background: linear-gradient(45deg, #6a11cb, #2585fc);
+        border: navajowhite;
+        color: white;
+      }
+      .lead:hover {
+        color: #0dcaf0;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+  </head>
+  <body class="bg-black text-white">
+    <!--navbar Section-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#Portfolio"
+          >PortFolio</a
+        >
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto p-2">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Contact">Contact</a>
+            </li>
+          </ul>
+           <div class="d-flex">
+            <a href="https://github.com/vinay829222" target="_blank" class="text-white me-3 fs-5"><i class="bi bi-github"></i></a>
+           <a href="https://www.linkedin.com/in/vinay-kumar-0a85b0260" target="_blank" class="text-white me-3 fs-5">
+           <i class="bi bi-linkedin"></i> 
+         </a>
+
+           </div>
+        </div>
+      </div>
+    </nav>
+    <!--Hero Section-->
+    <section
+      id="Home"
+      class="vh-100 d-flex justify-content-center align-items-center text-center flex-column"
+    >
+      <h1 class="fw-bold display-0">
+        Hello,I`m <span class="text-primary">Vinay Kumar</span>
+      </h1>
+      <p class="lead text-warning fw-bold">
+       Python Full Stack Developer || Coding || MySQL
+      </p>
+
+      <!-- <a class="btn btn-primary" href="#Project">View My Work</a> -->
+
+      <a
+        href="{% static 'pdf/Vinay_Resume_new.pdf' %}"
+        download
+        class="btn btn-custom"
+        >Download CV</a
+      >
+    </section>
+    <!--about section-->
+    <section id="About" class="py-5">
+      <div class="container">
+        <div class="row g-5 d-flex justify-content-center align-items-center">
+          <div class="col-md-5">
+            <img
+              style="width: 250px; height: 250px"
+              class="img-fluid shadow rounded-circle"
+              src="{% static "pdf/Vinay.jpg" %}"
+              alt="img"
+            />
+          </div>
+          <div class="col-md-7">
+            <h1 class="fw-bold">About Me</h1>
+            <p class="lead">
+              I am Vinay Kumar, a passionate and dedicated Python Full Stack
+              Developer with strong skills in Python, Django, MySQL, HTML, CSS,
+              Bootstrap, and JavaScript. I enjoy building end-to-end web
+              applications and continuously improving my development skills.
+            </p>
+            <button
+              type="button"
+              class="btn btn-custom btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Read Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about model-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-white" style="width: 600px">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              More About me
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Hi, I’m Vinay Kumar, a passionate and dedicated Python Full Stack
+              Developer with strong skills in Python, Django, MySQL, HTML, CSS,
+              Bootstrap, and JavaScript. <br />
+              I enjoy building end-to-end web applications, designing
+              user-friendly interfaces, and developing efficient backend
+              systems. <br />
+              I love turning ideas into real working projects that are fast,
+              responsive, and reliable. <br />
+              I am always open to learning new technologies and improving my
+              problem-solving skills. <br />
+              My goal is to create clean, maintainable, and scalable code that
+              delivers real value. <br />
+              If your company is looking for a hardworking and enthusiastic Full
+              Stack Developer, I would be happy to contribute. You can contact
+              me for internships, full-time roles, or freelance opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- project Section -->
+    <section class="container py-5" id="Projects">
+      <h1 class="text-center fw-bold mb-5">My Projects</h1>
+      <div class="row g-5">
+        <div class="col-md-4">
+          <div class="card bg-dark text-light">
+            <img class="card-img-top" src="{% static "pdf/Snake.png" %}"
+            alt="Project-1" />
+
+            <div class="card-body">
+              <h3 class="card-title">Snake_Game</h3>
+              <p class="card-text">
+                This is a simple Snake Game built using Python’s turtle graphics
+                module. The player controls the snake using the arrow keys and
+                the goal is to eat the food that appears randomly on the screen.
+              </p>
+              <a
+                class="btn btn-custom btn-sm"
+                href="https://github.com/vinay829222/Snake_game"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-dark text-light">
+            <img class="card-img-top" src="{% static "pdf/weather_prediction.png" %}" 
+            alt="Project-1" />
+
+            <div class="card-body">
+              <h3 class="card-title">Weather_Prediction_App</h3>
+              <p class="card-text">
+                A responsive web app built with HTML, CSS, and JavaScript that
+                shows real-time weather updates using the OpenWeatherMap API,
+                with error handling for invalid city names.
+              </p>
+              <a
+                class="btn btn-custom btn-sm"
+                href="https://github.com/vinay829222/Weather-prediction-App"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-dark text-light">
+            <img class="card-img-top" src="{% static "pdf/game.png" %}"
+            alt="Project-1" />
+
+            <div class="card-body">
+              <h3 class="card-title">Guess Lucky Number</h3>
+              <p class="card-text">
+                The Lucky Number Guessing Game is a beginner-friendly web
+                application built with Django, Bootstrap, and JavaScript. The
+                user tries to guess a number between 1 and 100 within three
+                attempts.
+              </p>
+              <a class="btn btn-custom btn-sm" href="#view">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills Section -->
+
+    <section id="Skills" class="py-5">
+      <div class="container">
+        <h1 class="text-center py-5">Skills</h1>
+        <div class="row text-center g-4">
+          <div class="col-md skills-box text-center">
+            <i class="bi bi-file-earmark-code-fill display-4 text-primary"></i>
+            <h5>HTML</h5>
+          </div>
+          <div class="col-md skills-box">
+            <i class="bi bi-filetype-css display-4 text-info"></i>
+            <h5>CSS</h5>
+          </div>
+          <div class="col-md skills-box text-center">
+            <i class="bi bi-code-slash display-4 text-danger"></i>
+            <h5>JavaScript</h5>
+          </div>
+          <div class="col-md skills-box">
+            <i class="bi bi-bootstrap-fill display-4 text-info"></i>
+            <h5>Bootstrap</h5>
+          </div>
+          <div class="col-md skills-box text-center">
+            <i class="bi bi-file-code-fill display-4 text-warning"></i>
+            <h5>Python</h5>
+          </div>
+
+          <div class="col-md skills-box text-center">
+            <i class="bi bi-layers-fill display-4 text-success"></i>
+            <h5>Django</h5>
+          </div>
+          <div class="col-md text-center skills-box">
+            <i class="bi bi-database-fill display-4 text-info"></i>
+            <h5>MySQL</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+
+    <section id="Contact" class="py-5">
+      <div class="container py-5 shadow-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h1 class="text-center">Contact me</h1>
+            <form action="https://api.web3forms.com/submit" method="POST" class="border-5 p-5">
+                <input type="hidden" name="access_key" value="c401f833-c03a-4c84-9b33-3f4808bd9546">
+              <label for="name" class="form-label m-2">Name</label>
+              <input
+                type="text"
+                class="form-control bg-dark border-0"
+                name="first_name"
+                id="name"
+                placeholder="Enter Name"
+              />
+              <label for="email" class="form-label m-2">Email</label>
+              <input
+                type="email"
+                class="form-control bg-dark border-0"
+                name="email"
+                id="email"
+                placeholder="Email"
+              />
+              <label for="message" class="form-label m-2">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="form-control bg-dark text-white border-0"
+              ></textarea>
+              <button type="submit" class="btn btn-custom bt-sm mt-3">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-3 text-center bg-dark text-white">
+      <p> &copy; 2025 Vinay Kumar. All rights reserved.</p>
+      <a href="https://github.com/vinay829222" target="_blank" class="text-white me-3 fs-5"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/vinay-kumar-0a85b0260" target="_blank" class="text-white me-3 fs-5">
+      <i class="bi bi-linkedin"></i> 
+      </a>
+    
+    </footer>
+
+    <script>
+        
+      var Typed = new Typed(".lead", {
+        strings: ["Python Full Stack Developer", "Coding","MySQL"],
+        typeSpeed: 10,
+        backSpeed: 50,
+        backDealy: 100,
+        loop: true,
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
