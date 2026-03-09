@@ -1,6 +1,6 @@
 {
-  "installCommand": "pip install --break-system-packages -r requirements.txt",
-  "buildCommand": "python manage.py migrate && python manage.py collectstatic --noinput",
+  "installCommand": "pip install --break-system-packages -r Portfolio/requirements.txt",
+  "buildCommand": "python Portfolio/manage.py migrate && python Portfolio/manage.py collectstatic --noinput",
   "builds": [
     {
       "src": "api/index.py",
