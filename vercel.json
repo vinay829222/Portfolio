@@ -1,4 +1,6 @@
 {
+  "buildCommand": "python manage.py collectstatic --noinput",
+  "installCommand": "pip install --break-system-packages -r requirements.txt",
   "builds": [
     {
       "src": "api/index.py",
